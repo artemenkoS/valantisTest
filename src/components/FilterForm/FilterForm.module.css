@@ -17,6 +17,10 @@
   background-color: transparent;
 }
 
+.item {
+  color: #000;
+}
+
 .arrow {
   height: 15px;
   width: 15px;

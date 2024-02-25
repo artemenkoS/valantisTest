@@ -52,7 +52,6 @@ export const FilterForm: React.FC<Props> = React.memo(({ disabled, onSubmit }) =
       category: event.target.value,
       value: '',
     }));
-    // onPageChange(1);
   }, []);
 
   const handleValueChange = React.useCallback(
@@ -74,7 +73,7 @@ export const FilterForm: React.FC<Props> = React.memo(({ disabled, onSubmit }) =
         <label className={styles.selectWrapper}>
           <select className={styles.select} name="category" value={state.category} onChange={handleCategoryChange}>
             {options.map((option) => (
-              <option key={option.value} value={option.value}>
+              <option className={styles.item} key={option.value} value={option.value}>
                 {option.label}
               </option>
             ))}
