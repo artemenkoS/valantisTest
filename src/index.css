@@ -1,0 +1,22 @@
+body {
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 1500px;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: Ubuntu;
+}
+#root {
+  height: 100%;
+  padding: 20px 0;
+}
+
+select {
+  -webkit-appearance: none;
+  text-align: center;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}

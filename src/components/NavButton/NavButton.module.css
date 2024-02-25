@@ -1,0 +1,33 @@
+.button {
+  padding: 10px;
+  font-size: 15px;
+  background-color: rgb(74, 123, 188);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: 10px;
+    padding: 8px;
+  }
+}
+.rounded-button {
+  border-radius: 5px;
+}
+
+.button:active {
+  background-color: rgba(74, 123, 188, 0.5);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.outlined {
+  background-color: transparent;
+  border: 1px solid rgb(74, 123, 188);
+  color: #000;
+}

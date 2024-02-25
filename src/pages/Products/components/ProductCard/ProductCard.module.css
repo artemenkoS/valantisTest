@@ -1,0 +1,77 @@
+.card {
+  width: auto;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product {
+  font-size: 16px;
+  overflow: hidden;
+  white-space: inherit;
+  overflow: visible;
+}
+
+.id {
+  color: #666;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #009688;
+}
+
+.brandSkeleton {
+  width: 50%;
+  height: 20px;
+  background-color: #f0f0f0;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.productSkeleton {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.idSkeleton {
+  width: 100%;
+  height: 16px;
+  background-color: #f0f0f0;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+
+.priceSkeleton {
+  width: 40%;
+  height: 24px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}

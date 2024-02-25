@@ -1,0 +1,29 @@
+.ProductList {
+  height: 100%;
+  overflow-y: scroll;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 800px) {
+  .ProductList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .ProductList {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.wrapper {
+  max-width: 1300px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+  justify-content: center;
+}
