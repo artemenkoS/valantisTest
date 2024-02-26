@@ -8,7 +8,7 @@ import { getProductParams } from '../pages/Products/utils';
 import { ProductParams } from '../pages/Products/types';
 
 export const useProducts = (params: ProductParams = getProductParams()) => {
-  const [isLoading, setLoading] = React.useState<boolean>(false);
+  const [isLoading, setLoading] = React.useState<boolean>(true);
   const [filter, setFilter] = React.useState<Filter | null>(params.filter);
   const [filteredItems, setFilteredItems] = React.useState<Product[] | null>(null);
   const [filteredIds, setFilteredIds] = React.useState<string[] | null>(null);
