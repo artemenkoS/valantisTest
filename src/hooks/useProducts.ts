@@ -78,7 +78,6 @@ export const useProducts = (params: ProductParams = getProductParams()) => {
       const pages = Math.ceil(uniqueIds.length / PAGE_SIZE);
       setFilteredIds(uniqueIds);
       setPages(pages);
-      setLoading(false);
     } catch (error) {
       fetchIds();
       handleFetchError(error);
