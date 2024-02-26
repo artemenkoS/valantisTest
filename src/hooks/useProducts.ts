@@ -36,7 +36,7 @@ export const useProducts = (params: ProductParams = getProductParams()) => {
       urlSearchParams.delete('value');
     }
     const newUrl = `?${urlSearchParams.toString()}`;
-    window.history.pushState({ path: newUrl }, '', newUrl);
+    window.history.replaceState({ path: newUrl }, '', newUrl);
   }, [filter, page]);
 
   const getProducts = async () => {

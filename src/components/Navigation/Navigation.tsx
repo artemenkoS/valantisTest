@@ -25,8 +25,8 @@ export const Navigation: React.FC<Props> = React.memo(({ page, onPageChange, pag
 
     pageNumbers.push(
       <NavButton key="first" variant="outlined" onClick={handlePageNumberClick(1)} disabled={page === 1 || disabled}>
-        <i className={`${styles.arrow} ${styles.left}`} />
-        <i className={`${styles.arrow} ${styles.left}`} />
+        <i className={clsx(styles.arrow, styles.left)} />
+        <i className={clsx(styles.arrow, styles.left)} />
       </NavButton>,
       <NavButton
         variant="outlined"
@@ -34,7 +34,7 @@ export const Navigation: React.FC<Props> = React.memo(({ page, onPageChange, pag
         onClick={handlePageNumberClick(page - 1)}
         disabled={page === 1 || disabled}
       >
-        <i className={`${styles.arrow} ${styles.left}`} />
+        <i className={clsx(styles.arrow, styles.left)} />
       </NavButton>
     );
 
@@ -60,7 +60,7 @@ export const Navigation: React.FC<Props> = React.memo(({ page, onPageChange, pag
         onClick={handlePageNumberClick(page + 1)}
         disabled={page === pages || disabled}
       >
-        <i className={`${styles.arrow} ${styles.right}`} />
+        <i className={clsx(styles.arrow, styles.right)} />
       </NavButton>,
       <NavButton
         key="last"
